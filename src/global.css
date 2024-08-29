@@ -1,0 +1,64 @@
+/* src/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+/* Custom Gradient Background */
+.custom-gradient-bg {
+  background-image: linear-gradient(#000c 21%, #0000009c 73%, #1f2f54 87%), linear-gradient(#0000, #0000);
+  opacity: 0.8; /* Adjust the opacity to see the video through the gradient */
+}
+
+/* Section and Video */
+.section-one {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full screen height */
+  overflow: hidden;
+}
+
+.mainVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 10;
+}
+
+/* Overlay Text Styling */
+.mainVideoOverlayText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 30;
+  color: white; /* Ensure the text is readable */
+}
+
+/* Button Styling */
+.main-video-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.main-video-button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,108 @@
+.Section-One {
+    width: 70%;
+    height: 250px;
+    margin: 23px auto 90px 200px; /* Adjust the margin as needed */
+    border-radius: 33px;
+    display: flex; /* Add flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative; /* Needed for pseudo-element positioning */
+    overflow: hidden; /* Ensures that the inner element does not overflow the border radius */
+    background-color: white; /* Add background color to see the border */
+    border: none; /* Remove the default border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+}
+
+.Section-One::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure the background covers the entire width */
+    height: 100%;
+    background-image: url("/public/images/main3.jpg");
+    background-size: cover; /* Ensure the image covers the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    border-radius: 33px; /* Match the outer border radius */
+    z-index: 0; /* Place it behind the content */
+}
+
+.Section-One-Header-Container {
+    font-weight: 900;
+    color: #000;
+    font-size: 40px;
+    text-align: center;
+    position: relative; /* Needed to position the header within the pseudo-element */
+    z-index: 1; /* Ensure it is above the pseudo-element */
+}
+
+.BLOG-CARD {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Add some space between the cards */
+    padding: 28px;
+    margin: 0 auto; /* Center the BLOG-CARD container */
+
+}
+
+.BLOG-CARD a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%; 
+    background-color: #fff;
+    border: 1px  #ccc;
+    border-radius: 21px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+    text-decoration: none;
+    color: inherit;
+    overflow: hidden;
+}
+
+.BLOG-CARD img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.BLOG-CARD h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #000;
+    font-weight: 600;
+}
+
+.BLOG-CARD p {
+    margin-bottom: 26px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.BLOG-CARD p:hover{
+color: #002fff;
+}
+
+.BLOG-CARD .date {
+    font-size: 11px;
+    color: #000000;
+    margin-left: 299px;
+    margin-top: 4px;
+    font-weight: 700;
+}
+
+h2 {
+    text-align: center;
+}
+
+.BLOG-CARD .date1 {
+    font-size: 11px;
+    color: #000000;
+    margin-left: 299px;
+    margin-top: -6px;
+    font-weight: 700;
+}

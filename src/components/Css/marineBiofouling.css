@@ -1,0 +1,81 @@
+.marine-biofouling-container {
+    background-color: #f7f8fb;
+    padding: 1rem; /* Reduced padding */
+    border-radius: 10px;
+    width: 80%; /* Adjusted width to be smaller */
+    max-width: 800px; /* Ensures the container doesn't get too large on wider screens */
+    margin: 4rem auto; /* Adjusted margin to center the container and reduce space */
+    margin-bottom: 9rem; /* Added margin-bottom for separation from footer */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-image: url("/public/images/boat.jpg");
+    height: 300px; /* Reduced height */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start (left) */
+    color: white; /* This might be needed for text visibility */
+    text-shadow: 1px 1px 2px black; /* Optional for better text readability */
+}
+
+.marine-biofouling-container h1 {
+    font-size: 3rem; /* Adjusted font size */
+    font-weight: 700;
+    color: white; /* Update this color to white */
+    margin-bottom: 1rem; /* Adjusted margin-bottom */
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Ensure it spans the full width */
+}
+
+.marine-biofouling-container p {
+    font-size: 1.4rem; /* Adjusted font size */
+    line-height: 1.6;
+    color: white; /* Update this color to white */
+    margin-bottom: 0.5rem; /* Adjusted margin-bottom */
+    text-align: justify;
+    width: 100%; /* Ensure it spans the full width */
+}
+
+@media (max-width: 768px) {
+    .marine-biofouling-container {
+        width: 90%;
+        padding: 1rem;
+        height: 250px; /* Adjusted height for smaller screens */
+    }
+
+    .marine-biofouling-container h1 {
+        font-size: 2rem;
+    }
+
+    .marine-biofouling-container p {
+        font-size: 1.2rem;
+    }
+}
+
+.marine-container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.marine-container h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.marine-container img.blog-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.marine-container p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
