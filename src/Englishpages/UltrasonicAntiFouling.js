@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
-import '../components/Css/ultrasonicAntiFouling.css';  // Ensure the path is correct
+ // Ensure the path is correct
 
 export default function UltrasonicAntiFouling() {
   return (
