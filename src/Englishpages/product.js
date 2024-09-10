@@ -5,11 +5,12 @@ import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 
 export default function Product() {
   return (
-    <>
-  <section>
-  <div className='flex justify-center shadow-lg w-[1000px] ml-[37rem] mt-17 rounded-[7rem] '>
+    <div className='flex flex-col items-center justify-center'>
 
-<div className='flex flex-col font-montserrat mt-64 font-extrabold text-blue-950 text-5xl ml-10 '>
+  <section className=''>
+  <div className='flex justify-center shadow-lg w-[1000px]  mt-17 rounded-[7rem] '>
+
+<div className='flex flex-col font-montserrat mt-64 font-extrabold text-blue-950 text-3xl ml-10 '>
   <h2>
   We can provide tailored solutions for your vessel.
   </h2>
@@ -72,7 +73,7 @@ export default function Product() {
     <img src='/images/Products2.PNG' className='w-[43rem] ml-4 rounded-2xl h-[48rem]' />
   </div>
 </section>
-<section class="max-w-4xl mx-auto mt-16 p-6 font-montserrat ml-[35rem]">
+<section class="max-w-4xl mx-auto mt-16 p-6 font-montserrat  flex flex-col items-center justify-center">
   <h2 class="text-3xl font-extrabold text-blue-950 mb-8">
     Technical<span class="text-slate-400">Specifications</span>
   </h2>
@@ -176,6 +177,6 @@ export default function Product() {
       </button>
       </div>
     </div>
-    </>
+    </div>
   );
 }

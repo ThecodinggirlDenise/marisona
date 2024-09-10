@@ -3,18 +3,18 @@ import { Link } from 'react-router-dom';
 
 export default function Blog() {
   return (
-    <div>
-      <section className='w-[70%] h-[250px] my-[23px] mx-auto mb-[90px] ml-[200px] rounded-[33px] flex justify-center items-center relative overflow-hidden bg-white border-none shadow-md'>
-        <div className='font-extrabold text-black text-[40px] text-center relative z-10'>
-          <h2>BLOG</h2>
-        </div>
+    <div className='flex flex-col items-center justify-center'>
+      <section className='w-[70%]  h-[250px]  my-[23px]  mb-[90px]  rounded-[33px] flex justify-center items-center relative overflow-hidden bg-white border-none shadow-md'>
+      
         {/* Background Image */}
-        <div className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat rounded-[33px] z-0" style={{ backgroundImage: 'url("/public/images/main3.jpg")' }}></div>
+        <div className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat rounded-[33px] z-10" style={{ backgroundImage: 'url("/images/main3.jpg")' }}>  <div className='font-extrabold text-black text-[40px] text-center flex items-center justify-center h-full'  >
+          <h2>BLOG</h2>
+        </div></div>
       </section>
 
       <section>
         <div className='flex flex-wrap justify-center gap-5 p-7 mx-auto'>
-          <Link to="/blogs/ultrasonic-antifouling-system" className='flex flex-col items-center text-center w-[30%] bg-white border border-gray-300 rounded-[21px] shadow-md text-inherit no-underline overflow-hidden'>
+          <Link to="/blogs/ultrasonic-antifouling-system" className='flex flex-col items-center text-center sm:w-[30%]  bg-white border border-gray-300 rounded-[21px] shadow-md text-inherit no-underline overflow-hidden '>
             <img src={"/images/Blog-1.jpg"} alt="Blog 1" className='rounded-[10px] w-full h-auto mb-2' />
             <h3 className='mb-2 text-[18px] text-black font-semibold'>What is an Ultrasonic Anti-Fouling System?</h3>
             <p className='mb-6 text-[16px] font-normal hover:text-[#002fff]'>Marisonia has developed a revolutionary machine technology designed to solve fouling problems</p>

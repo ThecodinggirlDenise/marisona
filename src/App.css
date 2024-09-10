@@ -39,3 +39,9 @@
     transform: rotate(360deg);
   }
 }
+/* Custom media query to hide the logo at 998px width and 814px height */
+@media (max-width: 998px) and (max-height: 814px) {
+  .hide-logo {
+    display: none; /* Hides the logo */
+  }
+}

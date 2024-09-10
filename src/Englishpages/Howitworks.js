@@ -20,14 +20,14 @@ function HowItWorks() {
 />
       </section>
 
-      <section className="section-two-howitworks m-[39rem] relative pb-96 pt-20 bg-blue-50 h-auto flex items-center mb-20 rounded-3xl max-w-7xl">
+      <section className="flex flex-col  m-[39rem] pb-8 pt-20 bg-blue-50 h-auto  items-center mb-20 rounded-3xl max-w-7xl">
     
-          <img src="/images/underwater.png" alt="Underwater Image" className=" w-[1200px]  h-[600px] " />
-          <div className="text-overlay absolute top-[69rem]  left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-12 bg-opacity-90 rounded-lg max-w-xl ">
+          <img src="/images/underwater.png" alt="Underwater Image" className=" w-full  h-[600px] mt-12 " />
+       <div className='flex flex-col items-center justify-center mt-20 mx-56'>
           <h2 className="text-4xl font-black text-black">{t('HITW2H')}</h2>
 
     <p className="text-sm mt-4 text-gray-500">{t('HITW3P')}</p>
-  </div>
+  </div>  
       </section>
 
 <section className="section-four-howitworks w-full ">

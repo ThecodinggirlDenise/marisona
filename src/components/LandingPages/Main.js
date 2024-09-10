@@ -1,22 +1,26 @@
-/* eslint-disable jsx-a11y/anchor-has-content */
-/* eslint-disable jsx-a11y/alt-text */
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Testimonials from './Testimonials';
-
+import '../Main.css'
 export default function Main() {
-  
   const { t } = useTranslation();
-  
+  const [isSidebarOpen, setSidebarOpen] = useState(false); // State to control the sidebar visibility
+
+  const toggleSidebar = () => setSidebarOpen(!isSidebarOpen);
+
   return (
-    <header className="w-full h-full overflow-x-hidden"> {/* Add overflow-x-hidden */}
+    <header className={`w-full h-full overflow-x-hidden pt-[90px] ${isSidebarOpen ? 'overflow-hidden' : ''}`}> {/* Add conditional class */}
+      {/* Sidebar Overlay */}
+      {isSidebarOpen && (
+        <div className="fixed inset-0 bg-black opacity-50 z-50" onClick={toggleSidebar}></div>  // Background overlay when sidebar is open
+      )}
 
       {/* Section One */}
-      <section className="relative flex items-center justify-center mb-7 h-screen">
+      <section className={`relative flex items-center justify-center mb-7  xl:h-screen  `}> 
         {/* Video Element */}
         <video
           src={"/video/marison.mp4"}
-          className="w-full h-full object-cover"
+          className="w-full  object-cover h-screen"
           autoPlay
           muted
           loop
@@ -26,11 +30,11 @@ export default function Main() {
         <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
 
         {/* Overlay Text */}
-        <div className="absolute inset-0 flex flex-col items-start justify-center pl-4 md:pl-16 text-white z-30" style={{maxWidth: '50%'}}> {/* Adjust width and removed large margin */}
-          <div className="font-montserrat font-black text-4xl md:text-5xl" style={{ color: "#c3ecf7" }}>
+        <div className="absolute inset-0 flex flex-col items-start justify-center pl-4 md:pl-16 text-white z-30 max-w-[90%] md:max-w-[50%]">
+          <div className="font-montserrat font-black text-4xl md:text-5xl text-[#c3ecf7] ">
             {t('Enhance Your Boating Experience')}
           </div>
-          <div className="text-lg md:text-xl mt-2">
+          <div className="text-lg md:text-xl mt-2 ">
             {t('Ultrasonic Anti-Fouling System')}
           </div>
           <div className="text-sm md:text-lg mt-2">
@@ -43,11 +47,11 @@ export default function Main() {
           </a>
         </div>
       </section>
-      
+
       {/* Section Two */}
-      <section className="relative flex flex-row items-center w-full max-w-6xl bg-gray-100 shadow-md rounded-xl p-9 mx-auto mb-16 bg-cover bg-center h-auto m-8" style={{ backgroundImage: `url('/images/main3.jpg')`, borderRadius:30 }}> {/* Adjusted max-width and removed large margin */}
-        <div className="flex-1 p-5 text-left mr-5">
-          <div className="text-3xl md:text-6xl font-extrabold text-blue-900 mb-6">
+      <section className={`relative flex flex-col md:flex-row items-center w-full max-w-6xl bg-gray-100 shadow-md rounded-xl p-5 md:p-9 mx-auto mb-16 bg-cover bg-center h-auto ${isSidebarOpen ? 'hidden' : ''}`} style={{ backgroundImage: `url('/images/main3.jpg')`, borderRadius: 30 }}> {/* Hide when sidebar is open */}
+        <div className="flex-1 p-5 text-left mr-0 md:mr-5">
+          <div className="text-3xl md:text-4xl font-extrabold text-blue-900 mb-6  ">
             {t('Ultrasonic Anti-Fouling System')}
           </div>
           <div className="text-lg text-gray-700 mb-5">
@@ -59,12 +63,12 @@ export default function Main() {
             </button>
           </a>
         </div>
-        <img src={"/images/main2.png"} className="flex-1 max-w-lg rounded-lg" alt="Ultrasound System" />
+        <img src={"/images/main2.png"} className=" max-w-lg rounded-lg  object-cover h-96 -mt-8" alt="Ultrasound System" />
       </section>
 
       {/* Section Three */}
-      <section className="flex flex-col lg:flex-row items-center justify-center max-w-6xl mx-auto rounded-lg p-10 mt-20 mb-40 h-auto relative"> {/* Adjusted layout for smaller screens */}
-        <img src={"/images/main4.png"} className="w-full lg:max-w-2xl lg:ml-[-5rem] rounded-3xl" alt="Boat System" />
+      <section className={`flex flex-col lg:flex-row items-center justify-center max-w-6xl mx-auto rounded-lg p-10 mt-20 mb-40 h-auto relative ${isSidebarOpen ? 'hidden' : ''}`}>
+        <img src={"/images/main4.png"} className="w-full lg:max-w-2xl lg:ml-[-5rem] rounded-3xl mb-5 lg:mb-0" alt="Boat System" />
         <div className="flex-1 p-7 mt-10 lg:mt-0 lg:mr-[-10rem]">
           <h2 className="text-4xl font-black text-gray-900">
             {t("Marisonia: The Shield Your Boat Deserves")}
@@ -84,17 +88,17 @@ export default function Main() {
       </section>
 
       {/* Section Four */}
-      <section className="text-center max-w-6xl mx-auto mb-40 bg-cyan-50 rounded-xl py-16 h-auto"> {/* Adjusted padding and height */}
+      <section className={`text-center max-w-6xl mx-auto mb-40 bg-cyan-50 rounded-xl py-16 px-5 h-auto ${isSidebarOpen ? 'hidden' : ''}`}>
         <h1 className="text-4xl font-black text-gray-900 mb-12">
           {t("MS4")}
         </h1>
         <p className="text-lg text-gray-700 mb-12">
           {t('MS6')}
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 px-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           <div className="text-center">
             <div className="p-2">
-              <img src={"/images/eco-friendly.png"} className="mx-auto mb-2 w-1/4 md:w-1/12" alt="Eco-Friendly Icon" /> {/* Adjusted width */}
+              <img src={"/images/eco-friendly.png"} className="mx-auto mb-2 w-1/4 md:w-1/12" alt="Eco-Friendly Icon" />
               <h5 className="font-black text-gray-900 mb-2">
                 {t('Eco-Friendly')}
               </h5>
@@ -103,7 +107,7 @@ export default function Main() {
               </p>
             </div>
             <div className="p-2 mt-10 md:mt-36">
-              <img src={"/images/reduceMan.png"} className="mx-auto mb-7 w-1/4 md:w-1/12" alt="Reduce Maintenance Icon" /> {/* Adjusted width */}
+              <img src={"/images/reduceMan.png"} className="mx-auto mb-7 w-1/4 md:w-1/12" alt="Reduce Maintenance Icon" />
               <h5 className="font-black text-gray-900 mb-2">
                 {t('Reduce Maintenance')}
               </h5>
@@ -113,11 +117,11 @@ export default function Main() {
             </div>
           </div>
           <div className="flex justify-center">
-            <img src={"/images/main5.png"} className="rounded-lg w-full md:w-96 mt-10 md:mt-36" alt="Main Feature" /> {/* Adjusted width and margin */}
+            <img src={"/images/main5.png"} className="rounded-lg w-full md:w-96 mt-10 md:mt-36" alt="Main Feature" />
           </div>
           <div className="text-center">
             <div className="p-2">
-              <img src={"/images/main-Fuel.png"} className="mx-auto mb-4 w-1/4 md:w-1/12" alt="Fuel Consumption Icon" /> {/* Adjusted width */}
+              <img src={"/images/main-Fuel.png"} className="mx-auto mb-4 w-1/4 md:w-1/12" alt="Fuel Consumption Icon" />
               <h5 className="font-black text-gray-900 mb-4 mt-3">
                 {t('Fuel Consumption')}
               </h5>
@@ -126,7 +130,7 @@ export default function Main() {
               </p>
             </div>
             <div className="p-2 mt-10">
-              <img src={"/images/settings.png"} className="mx-auto mb-4 w-1/4 md:w-1/12" alt="Easy to Install Icon" /> {/* Adjusted width */}
+              <img src={"/images/settings.png"} className="mx-auto mb-4 w-1/4 md:w-1/12" alt="Easy to Install Icon" />
               <h5 className="font-black text-gray-900 mb-4 mt-3">
                 {t('MS9')}
               </h5>
@@ -138,10 +142,10 @@ export default function Main() {
         </div>
       </section>
 
-      <Testimonials/>
-   
+      <Testimonials />
+
       {/* Section Six */}
-      <section className="w-full h-full py-16">
+      <section className={`w-full h-full py-16 ${isSidebarOpen ? 'hidden' : ''}`}>
         <div className="flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto">
           <div className="flex-1 mb-10 md:mb-0">
             <h1 className="text-4xl font-bold text-blue-900 mb-10">
@@ -185,10 +189,9 @@ export default function Main() {
               </div>
             </div>
           </div>
-          <img src={"/images/main8.png"} className="w-full md:max-w-lg rounded-lg shadow-md object-cover" alt="Support Team" /> {/* Adjusted width */}
+          <img src={"/images/main8.png"} className="w-full md:max-w-lg rounded-lg shadow-md object-cover" alt="Support Team" />
         </div>
       </section>
-
     </header>
   );
 }
