@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import LanguageSwitcher from '../../LanguageSwitcher';
 import logo from '../../Logo/MarisonaLogo.png';
-import '../Main.css'
+
 function Navbar() {
   const { t } = useTranslation();
   const [sidebar, setSidebar] = useState(false);

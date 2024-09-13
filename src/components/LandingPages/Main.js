@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Testimonials from './Testimonials';
-import '../Main.css'
+
 export default function Main() {
   const { t } = useTranslation();
   const [isSidebarOpen, setSidebarOpen] = useState(false); // State to control the sidebar visibility
