@@ -11,7 +11,7 @@ const OurStory = () => {
         <img
           src="/images/OurStory1.jpg"
           alt="Eco-Maritime"
-          className="image-left rounded-lg w-full lg:w-1/2 mt-32 lg:mr-5 mb-5 lg:mb-0"
+          className="image-left rounded-lg w-full lg:w-1/2 mt-10  lg:mt-32 lg:mr-5 mb-5 lg:mb-0"
         />
         <div className="text-content flex-1 px-5 lg:ml-8">
           <h2 className="text-2xl sm:text-3xl font-bold mb-5">{t('OS1H')}</h2>
@@ -20,9 +20,9 @@ const OurStory = () => {
       </section>
 
       {/* Section Two */}
-      <section className="section-two-ourstory flex flex-col lg:flex-row items-center mb-10">
+      <section className="section-two-ourstory flex flex-col-reverse lg:flex-row items-center mb-10">
         <div className="text-content flex-1 px-5 lg:ml-8 mb-5 lg:mb-0">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-5">{t('OS2H')}</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-5 mt-4 sm:mt-0 ">{t('OS2H')}</h2>
           <p className="text-sm sm:text-base mb-4">{t('OS2P')}</p>
         </div>
         <img

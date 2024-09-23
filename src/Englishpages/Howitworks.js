@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react';
 import { useTranslation } from 'react-i18next';
@@ -9,20 +10,20 @@ function HowItWorks() {
   return (
     <div className="how-it-works-container flex flex-col items-center w-full mx-auto mt-64">
       {/* Section One */}
-      <section className="section-one-howitworks flex flex-col lg:flex-row items-center relative h-auto lg:h-96 rounded-3xl max-w-7xl mt-12 mb-64">
-        <div className="text-overlay-box bg-slate-300 p-8 w-full lg:w-[30rem] z-10 lg:ml-60 mt-10 lg:mt-0  text-black text-2xl rounded-lg shadow-lg">
+      <section className="section-one-howitworks flex flex-col lg:flex-row items-center relative h-auto lg:h-96  w-full lg:mt-12 mb-64">
+        <div className="text-overlay-box bg-slate-300 p-8 w-full sm:-mr-10 -mt-24 sm:-mt-0 lg:w-[35rem]  rounded-[30px] z-10 lg:ml-60 lg:mt-10 sm:h-[300px] text-black text-2xl shadow-lg ">
           <h2 className="text-3xl lg:text-4xl font-semibold">{t('HITW1H')}</h2>
           <p className="text-base mt-4 ">{t('HITW2P')}</p>
         </div>
         <img 
           src="/images/boat.jpg" 
           alt="Boat Image" 
-          className="w-full lg:w-[50%] h-auto rounded-2xl mt-10 lg:mt-0 shadow-md" 
+          className="w-full lg:w-[30%] h-auto rounded-2xl mt-10 lg:mt-0 shadow-md" 
         />
       </section>
 
       {/* Section Two */}
-      <section className="flex flex-col items-center bg-blue-50 py-8 lg:py-20 h-auto mb-20 rounded-3xl max-w-7xl mx-auto w-[58%]">
+      <section className="flex flex-col items-center bg-blue-50 py-8 lg:py-20 h-auto mb-20 rounded-3xl max-w-7xl mx-auto  w-full  sm:w-[58%]  px-4">
         <img 
           src="/images/underwater.png" 
           alt="Underwater Image" 
@@ -40,7 +41,7 @@ function HowItWorks() {
         style={{ backgroundImage: "url('/images/main13.png')" }}
       >
         <h2 className="text-3xl lg:text-4xl font-extrabold text-black mb-10">{t('H1H')}</h2>
-        <div className="feature-cards grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 rounded-[2rem] max-w-5xl">
+        <div className="feature-cards grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 rounded-[2rem] max-w-5xl px-5">
           {/* Feature Card Components */}
           {[
             { img: "reducespeed.png", title: t('HITW4H'), text: t('H4P') },
@@ -72,12 +73,12 @@ function HowItWorks() {
 
       {/* Section Five */}
       <section className="text-center p-8 font-montserrat">
-        <div className="mb-8 flex items-center justify-center">
+      <div className="mb-8 flex items-center justify-center">
           <h2 className="text-4xl lg:text-5xl font-extrabold text-gray-800 w-full lg:w-[500px] mb-10">
             {t('LHB')}
           </h2>
         </div>
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-6 h-auto">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-6 h-auto ">
           {[
             { img: "enviromentally friendly.png", title: "Environmental Friendly", text: "Protects ships, preserves seas; harmless to marine life." },
             { img: "EasytoInstall.png", title: "Easy to Install", text: "Proficient Teams, Quick Install: Optimal Use in Half a Day!" },

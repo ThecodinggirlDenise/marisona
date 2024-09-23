@@ -9,10 +9,10 @@ const AccordionItem = ({ question, answer }) => {
   };
 
   return (
-    <div className="border-b border-gray-200 mb-4 bg-white rounded-xl w-[160%] mt-[90px] shadow-lg ml-[-170px]">
-      <div className="flex justify-between items-center gap-4 cursor-pointer p-4" onClick={toggleAccordion}>
-        <h2 className="text-lg font-semibold text-[#242e4c] text-left">{question}</h2>
-        <span className="bg-black w-10 h-10 flex justify-center items-center rounded-full text-white flex-shrink-0">
+    <div className="border-b border-gray-200 mb-4 bg-white rounded-xl w-full sm:w-[100%] md:w-[100%] lg:w-[80%] xl:w-[70%] mt-[30px] sm:mt-[40px] lg:mt-[90px] shadow-lg mx-auto">
+      <div className="flex justify-between items-center gap-4 cursor-pointer p-4 sm:p-6 lg:p-8" onClick={toggleAccordion}>
+        <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-[#242e4c] text-left">{question}</h2>
+        <span className="bg-black w-8 h-8 sm:w-10 sm:h-10 flex justify-center items-center rounded-full text-white flex-shrink-0">
           <i className={isOpen ? 'ri-arrow-up-s-line' : 'ri-arrow-down-s-line'}></i>
         </span>
       </div>
@@ -22,7 +22,7 @@ const AccordionItem = ({ question, answer }) => {
         className={`transition-all duration-300 ease-in-out overflow-hidden ${isOpen ? 'max-h-[500px]' : 'max-h-0'}`}
         style={{ maxHeight: isOpen ? contentRef.current.scrollHeight + 'px' : '0px' }}
       >
-        <p className="p-4 font-medium text-left text-[16px]">{answer}</p>
+        <p className="p-4 sm:p-6 lg:p-8 font-medium text-left text-[14px] sm:text-[16px]">{answer}</p>
       </div>
     </div>
   );
@@ -106,12 +106,12 @@ const Accordion = () => {
 
   return (
     <div className="w-full mx-auto min-h-screen p-8 grid place-items-center">
-      <div className="rounded-[2.5rem] w-[900px] max-w-[60rem] p-20 text-center">
+      <div className="rounded-[2.5rem] w-full max-w-[1000px] p-8 sm:p-12 lg:p-20 text-center">
         <div className="inline-block bg-[#40507a] text-white rounded-lg py-2 px-4 font-bold mb-8">
           <span className="text-lg font-bold">FAQs</span>
         </div>
-        <h1 className="text-3xl font-bold text-[#242e4c] mb-8 p-24">Frequently Asked Questions</h1>
-        <p className='mt-4 mb-12 text-lg text-[#545d7a] px-2'>
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#242e4c] mb-8">Frequently Asked Questions</h1>
+        <p className="mt-4 mb-12 text-base sm:text-lg lg:text-xl text-[#545d7a]">
           We provide answers to common questions about Marisonia's anti-fouling system and related topics. If you have a question that isn't addressed here, please feel free to contact us for further assistance.
         </p>
         {data.map((item, index) => (
