@@ -65,7 +65,7 @@ function Navbar() {
 
       {/* Mobile Sidebar */}
       {sidebar && (
-        <div className="fixed inset-0 z-50 flex flex-col items-center bg-white h-[600px] overflow-y-auto shadow-lg transition-transform duration-300 ease-in-out">
+        <div className="fixed inset-0 z-50 flex flex-col items-center bg-white h-[350px] overflow-y-auto shadow-lg transition-transform duration-300 ease-in-out">
           {/* Close Button */}
           <div className="flex justify-between items-center p-3 bg-[#1f2f54] w-full">
             <img src={logo} alt="Logo" className="h-[40px]" />
@@ -120,7 +120,7 @@ function Navbar() {
             </Link>
 
             {/* Language Switcher */}
-            <div className="mt-4">
+            <div className="mt-4 text-[#1f2f54] font-semibold text-lg sm:text-white ">
               <LanguageSwitcher />
             </div>
           </div>

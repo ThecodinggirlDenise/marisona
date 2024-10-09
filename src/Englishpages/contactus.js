@@ -241,10 +241,10 @@ export default function ContactUs() {
             </TabsContent>
           </div>
 
-          <div className="mt-5 w-full sm:w-[60%] ml-0 flex flex-col items-start p-5">
-            <label className="flex items-center mb-3">
+          <div className="mt-5 w-full sm:w-[70%] ml-0 flex flex-col items-start p-5">
+            <label className="flex items-center mb-3 w-full">
               <input type="checkbox" className="mr-2" />
-              I accept the{" "}
+           <div className="w-full">   I accept the {" "}
               <a href="/terms-of-service" className="underline text-blue-500">
                 Terms of Service
               </a>{" "}
@@ -252,7 +252,7 @@ export default function ContactUs() {
               <a href="/privacy-policy" className="underline text-blue-500">
                 Privacy Policy
               </a>
-              .
+              .</div>
             </label>
             <button
               type="submit"
