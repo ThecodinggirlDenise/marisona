@@ -45,7 +45,7 @@ function HowItWorks() {
         className="section-four-howitworks w-full bg-cover bg-center bg-no-repeat py-20 flex flex-col items-center justify-center"
         style={{ backgroundImage: "url('/images/main13.png')" }}
       >
-        <h2 className="text-3xl lg:text-4xl font-extrabold text-black mb-10">
+        <h2 className="text-3xl lg:text-4xl font-extrabold text-black mb-10 p-5">
           {t("H1H")}
         </h2>
         <div className="feature-cards grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 rounded-[2rem] max-w-5xl px-5">

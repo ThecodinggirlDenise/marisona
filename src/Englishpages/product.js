@@ -30,21 +30,21 @@ export default function Product() {
       </section>
 
       {/* Section 2 */}
-      <section className=" w-full flex flex-col lg:flex-row justify-center items-center mt-16 lg:mt-44 px-4 font-montserrat">
+      <section className=" w-full flex flex-col lg:flex-row justify-center items-center mt-16 lg:mt-44 px-4 font-montserrat max-w-5xl">
         <div className="flex items-center justify-center gap-5 flex-col lg:flex-row">
           <img
             src="/images/prooducts1.jpg"
-            className="w-full lg:w-[33rem] rounded-xl h-auto lg:h-[40rem] pl-8"
+            className="w-full lg:w-[33rem] rounded-xl h-auto lg:h-[30rem] "
           />
           <div className="flex flex-col gap-5 text-center lg:text-left px-4 lg:px-18">
-            <h2 className="text-3xl lg:text-xl text-blue-950 font-extrabold">
+            <h2 className="text-3xl lg:text-4xl text-blue-950 font-extrabold">
               Going Green on the Waves: Embrace Environmentally Friendly Boating
               Solutions
             </h2>
             <h4 className="text-xl lg:text-lg font-extrabold text-slate-950">
               Biocide Use in Marine Coatings Faces Growing Regulations
             </h4>
-            <p className="text-base lg:text-lg text-black  pr-64">
+            <p className="text-base lg:text-lg text-black ">
               Authorities worldwide are increasingly imposing restrictions and
               bans on biocide use in marine coatings to protect marine life and
               human health.
@@ -54,8 +54,8 @@ export default function Product() {
       </section>
 
       {/* Section 3 */}
-      <section className="w-full flex flex-col lg:flex-row justify-center items-center mt-16 lg:mt-36 px-4 font-montserrat">
-        <div className="flex flex-col gap-8 w-full lg:w-[60%]">
+      <section className="w-full flex flex-col lg:flex-row justify-center items-center mt-16 lg:mt-36 px-4 font-montserrat max-w-5xl gap-5">
+        <div className="flex flex-col  w-full lg:w-1/2 gap-4">
           <h2 className="text-3xl lg:text-2xl text-blue-950 font-extrabold text-center lg:text-left">
             Green Waves Ahead: Marisonia's Eco-friendly Solution
           </h2>
@@ -91,10 +91,12 @@ export default function Product() {
         </div>
 
         {/* Image Section */}
-        <img
-          src="/images/Products2.PNG"
-          className="w-[24rem] lg:w-[23rem] mt-10 lg:mt-0 rounded-2xl h-auto lg:h-[48rem] object-cover"
-        />
+        <div className="h-full w-full sm:w-1/2  border-black relative  ">
+          <img
+            src="/images/Products2.PNG"
+            className="w-[24rem] lg:w-full mt-10 lg:mt-0 rounded-2xl h-auto lg:h-full  "
+          />
+        </div>
       </section>
 
       {/* Technical Specifications Section */}
