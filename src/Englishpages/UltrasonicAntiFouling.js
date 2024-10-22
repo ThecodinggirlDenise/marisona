@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 /* eslint-disable react/jsx-no-undef */
 /* eslint-disable jsx-a11y/alt-text */
@@ -32,19 +33,11 @@ export default function UltrasonicAntiFouling() {
           backgroundSize: "cover",
         }}
       ></div>
+
       <img src={"/images/Blog-1.jpg"} className="w-[30rem] ml-96 mt-12"></img>
       <h1 className="text-4xl ml-96  mt-10 font-semibold w-72">
         What is an Ultrasonic Anti-FoulingSystem?
       </h1>
-      <div className="sticky top-[90px] cta-sidebar w-full lg:w-80 flex-shrink-0 bg-slate-800 p-6 rounded-lg shadow-md mt-10 lg:mt-0 lg:h-80 ml-auto">
-        <h2 className="text-2xl lg:text-4xl font-bold mb-4 text-white font-montserrat text-center lg:text-left">
-          Get a Special Pricing for Your Vessels!
-        </h2>
-        <button className="bg-white text-black  rounded-lg py-2 px-5 w-full lg:w-64 font-semibold mt-4 hover:bg-blue-800 transition">
-          Get a Quote
-          <FontAwesomeIcon icon={faArrowRightLong} className="ml-2" />
-        </button>
-      </div>
 
       <div className="text-sm">
         <p className="pl-96 mr-[70rem] mt-12 ">
@@ -158,6 +151,99 @@ export default function UltrasonicAntiFouling() {
           essential part of marine vessel maintenance day by day. ‍
         </p>
       </div>
+      <section className="w-full max-w-7xl mx-auto my-16 p-8 bg-blue-900 rounded-3xl flex items-center justify-between">
+        {/* Left Side - Image */}
+        <div className="w-1/2 flex justify-center h-96 ">
+          <img
+            src="/images/peronImage.png" // Update with the correct image path
+            alt="Special Pricing"
+            className="rounded-3xl object-cover"
+          />
+        </div>
+
+        {/* Right Side - Text */}
+        <div className="w-1/2 text-white">
+          <h2 className="text-6xl font-bold mb-4">
+            Get a Special Pricing for Your Vessels!
+          </h2>
+          <p className="text-lg mb-6">
+            You can contact us to protect your boat with Marisonia’s innovative
+            technology. Afterwards, our team will get in touch with you.
+          </p>
+          <button className="bg-transparent border-2 border-white text-white rounded-lg py-2 px-8 font-semibold hover:bg-white hover:text-blue-900 transition">
+            Contact Us
+          </button>
+        </div>
+      </section>
+      <section>
+        <h1 className="text-4xl ml-96  mt-10 font-semibold ">
+          What are the benefits of Ultrasonic Anti-FoulingSystem?
+        </h1>
+        <div>
+          <p className="pl-96 mr-[70rem] mt-12 mb-9">
+            Marisonia’s ultrasonicanti-fouling systems bring multiple benefits
+            to boat owners, ranging from eco-friendlysolutions to cost savings,
+            fuel efficiency, and the general maintenance ofmarine vessels.
+          </p>
+          <p className="pl-96 mr-[70rem] mt-12 mb-9">
+            Environmentally Friendly: One of the key advantages of
+            ultrasonicanti-fouling systems is their eco-friendly nature.
+            Traditional chemical-basedmethods cause both sustainability issues
+            and harm to aquatic life. The use ofthese solutions also damages the
+            vessel and shortens its economic life. Utilizinghigh-frequency
+            waves, these systems pose minimal harm and disruption to marinelife,
+            limiting the field of use only to the vessel’s periphery.
+          </p>
+          <p className="pl-96 mr-[70rem] mt-12 mb-9">
+            ContinuousProtection and Extended Lifespan: By emitting ultrasonic
+            waves thatwork as a proactive deterrent for fouls, the ultrasonic
+            anti-fouling systemoffers continuous protection. Therefore, the
+            system prevents the growth and settlementof marine organisms on boat
+            surfaces, especially on the boat’s hull and runninggears. Sustained
+            protection and continuous operation of the system ensure along and
+            healthy lifespan for the marine vessels.
+          </p>
+          <p className="pl-96 mr-[70rem] mt-12 mb-9">
+            MinimizedMaintenance Intervals: By minimizing the need
+            forlabor-intensive cleaning and antifouling paint application, boat
+            owners canenjoy their sailing experience without worrying about
+            frequent maintenance andinconvenient and unsustainable anti-fouling
+            practices.
+          </p>
+          <p className="pl-96 mr-[70rem] mt-12 mb-9">
+            IncreasedPerformance: Conventional methods of anti-biofouling also
+            disruptthe performance of the boat due to toxicity concerns and
+            shorter lifespan. Marisonia’sultrasonic anti-fouling systems
+            increase performance by reducing hydrodynamicdrag, enhancing fuel
+            efficiency, optimizing maneuverability, prolonging theengine life,
+            and enhancing stability. The use of more optimized andeco-friendly
+            systems allows boat owners to sail freely without thinking aboutthe
+            regulatory restrictions applied to traditional methods.
+          </p>
+          <p className="pl-96 mr-[70rem] mt-12 mb-9">
+            User-FriendlyInstallation and Operation: Ultrasonic anti-fouling
+            systems alsoaim for user convenience. Other anti-biofouling methods
+            include the troublesomeapplication of chemical compounds and
+            products, which results in sustainabilityissues and even aesthetic
+            concerns. Once installed by Marisonia’s proficientteams, boat owners
+            can make the most of their sailing activities in just half aday
+            without breaking a sweat!.
+          </p>
+          <p className="pl-96 mr-[70rem] mt-12 mb-15">
+            LessHustle, More Fun: Ultrasonic anti-fouling systems offerdiverse
+            and preferable solutions, bringing multiple benefits without
+            causingany cost-related concerns. With Marisonia’s state-of-the-art
+            systems, boatownerscan say goodbye to the hassles of frequent
+            cleaning and maintenance andcan enjoy confident cruises with their
+            loved ones.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <h1 className="text-4xl pl-20 mt-24 mb-16 font-bold">Other Blogs</h1>
+        </div>
+      </section>
     </div>
   );
 }
