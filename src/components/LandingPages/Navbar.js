@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
-import LanguageSwitcher from '../../LanguageSwitcher';
-import logo from '../../Logo/MarisonaLogo.png';
+import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+import LanguageSwitcher from "../../LanguageSwitcher";
+import logo from "../../Logo/MarisonaLogo.png";
 
 function Navbar() {
   const { t } = useTranslation();
@@ -14,9 +14,9 @@ function Navbar() {
 
   useEffect(() => {
     if (sidebar) {
-      document.body.style.overflow = 'hidden'; // Prevent background scrolling
+      document.body.style.overflow = "hidden"; // Prevent background scrolling
     } else {
-      document.body.style.overflow = 'auto'; // Allow scrolling
+      document.body.style.overflow = "auto"; // Allow scrolling
     }
   }, [sidebar]);
 
@@ -28,38 +28,60 @@ function Navbar() {
           <img
             src={logo}
             alt="Logo"
-            className=" logo h-[50px] pt-2 transition-transform duration-300 ease-in-out hover:scale-110 hide-logo:hidden"  // Apply custom class here
+            className=" logo h-[50px] pt-2 transition-transform duration-300 ease-in-out hover:scale-110 hide-logo:hidden" // Apply custom class here
           />
         </Link>
       </div>
 
       {/* Center Section - Nav Items for Medium and Larger Screens */}
       <div className="hidden md:flex gap-5 items-center font-bold flex-1 justify-center">
-        <Link to="/our-story" className="text-white text-sm hover:font-extrabold hover:text-[#b0c8e7]">
-          {t('Our Story')}
+        <Link
+          to="/our-story"
+          className="text-white text-sm hover:font-extrabold hover:text-[#b0c8e7]"
+        >
+          {t("Our Story")}
         </Link>
-        <Link to="/how-it-works" className="text-white text-sm hover:font-extrabold hover:text-[#b0c8e7]">
-          {t('How It Works')}
+        <Link
+          to="/how-it-works"
+          className="text-white text-sm hover:font-extrabold hover:text-[#b0c8e7]"
+        >
+          {t("How It Works")}
         </Link>
-        <Link to="/products" className="text-white text-sm hover:font-extrabold hover:text-[#b0c8e7]">
-          {t('Products')}
+        <Link
+          to="/products"
+          className="text-white text-sm hover:font-extrabold hover:text-[#b0c8e7]"
+        >
+          {t("Products")}
         </Link>
-        <Link to="/contact" className="text-white text-sm hover:font-extrabold hover:text-[#b0c8e7]">
-          {t('Contact')}
+        <Link
+          to="/contact"
+          className="text-white text-sm hover:font-extrabold hover:text-[#b0c8e7]"
+        >
+          {t("Contact")}
         </Link>
-        <Link to="/fqa" className="text-white text-sm hover:font-extrabold hover:text-[#b0c8e7]">
-          {t('FQA')}
+        <Link
+          to="/fqa"
+          className="text-white text-sm hover:font-extrabold hover:text-[#b0c8e7]"
+        >
+          {t("FQA")}
         </Link>
-        <Link to="/blog" className="text-white text-sm hover:font-extrabold hover:text-[#b0c8e7]">
-          {t('Blog')}
+        <Link
+          to="/blog"
+          className="text-white text-sm hover:font-extrabold hover:text-[#b0c8e7]"
+        >
+          {t("Blog")}
         </Link>
         <LanguageSwitcher />
       </div>
 
       {/* Right Section - Hamburger Menu for Small Screens */}
       <div className="md:hidden flex items-center">
-        <button onClick={toggleSidebar} className="text-white focus:outline-none">
-          <i className="fas fa-bars"></i> {/* Replace with your preferred icon library */}
+        <button
+          onClick={toggleSidebar}
+          className="text-white focus:outline-none"
+        >
+          <i className="fas fa-bars"></i>{" "}
+          {/* Replace with your preferred icon library */}
         </button>
       </div>
 
@@ -69,8 +91,12 @@ function Navbar() {
           {/* Close Button */}
           <div className="flex justify-between items-center p-3 bg-[#1f2f54] w-full">
             <img src={logo} alt="Logo" className="h-[40px]" />
-            <button onClick={toggleSidebar} className="text-white text-2xl focus:outline-none">
-              <i className="fas fa-times"></i> {/* Replace with your preferred icon library */}
+            <button
+              onClick={toggleSidebar}
+              className="text-white text-2xl focus:outline-none"
+            >
+              <i className="fas fa-times"></i>{" "}
+              {/* Replace with your preferred icon library */}
             </button>
           </div>
 
@@ -81,42 +107,42 @@ function Navbar() {
               onClick={toggleSidebar}
               className="text-[#1f2f54] text-lg font-semibold hover:text-gray-700"
             >
-              {t('Our Story')}
+              {t("Our Story")}
             </Link>
             <Link
               to="/how-it-works"
               onClick={toggleSidebar}
               className="text-[#1f2f54] text-lg font-semibold hover:text-gray-700"
             >
-              {t('How It Works')}
+              {t("How It Works")}
             </Link>
             <Link
               to="/products"
               onClick={toggleSidebar}
               className="text-[#1f2f54] text-lg font-semibold hover:text-gray-700"
             >
-              {t('Products')}
+              {t("Products")}
             </Link>
             <Link
               to="/contact"
               onClick={toggleSidebar}
               className="text-[#1f2f54] text-lg font-semibold hover:text-gray-700"
             >
-              {t('Contact')}
+              {t("Contact")}
             </Link>
             <Link
               to="/fqa"
               onClick={toggleSidebar}
               className="text-[#1f2f54] text-lg font-semibold hover:text-gray-700"
             >
-              {t('FQA')}
+              {t("FQA")}
             </Link>
             <Link
               to="/blog"
               onClick={toggleSidebar}
               className="text-[#1f2f54] text-lg font-semibold hover:text-gray-700"
             >
-              {t('Blog')}
+              {t("Blog")}
             </Link>
 
             {/* Language Switcher */}

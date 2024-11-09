@@ -18,48 +18,55 @@ export default function Blog() {
       </section>
 
       {/* Section 2: Blog Posts */}
-      <section className="w-full max-w-6xl">
-        <div className="flex flex-wrap justify-center gap-6 p-4 md:p-7 mx-auto">
+      <section className="w-full max-w-9xl">
+        <div className="flex flex-wrap justify-center gap-6 ">
           {/* Blog Post 1 */}
           <Link
             to="/blogs/ultrasonic-antifouling-system"
-            className="flex flex-col items-center text-center w-full sm:w-[45%] lg:w-[30%] bg-white border border-gray-300 rounded-[21px] shadow-md text-inherit no-underline overflow-hidden p-4"
+            className="flex flex-col w-full sm:w-[45%] lg:w-[30%] bg-white border border-gray-300 rounded-[21px] shadow-md text-inherit no-underline overflow-hidden "
           >
             <img
               src={"/images/Blog-1.jpg"}
               alt="Blog 1"
-              className="rounded-[10px] w-full h-auto mb-4"
-            />
-            <h3 className="mb-2 text-lg text-black font-semibold">
-              What is an Ultrasonic Anti-Fouling System?
-            </h3>
-            <p className="mb-4 text-base font-normal hover:text-[#002fff]">
-              Marisonia has developed a revolutionary machine technology
-              designed to solve fouling problems
-            </p>
-            <div className="text-[11px] text-black mt-auto font-bold self-end">
-              June 5, 2024
+              className=" w-full h-auto mb-4"
+            />{" "}
+            <div className="p-5 flex flex-col items-center ">
+              <h3 className="mb-2 text-lg  text-black font-semibold">
+                What is an Ultrasonic Anti-Fouling System?
+              </h3>
+
+              <p className="mb-4 text-base font-normal text-[#002fff] text-center">
+                Marisonia has developed a revolutionary machine technology
+                designed to solve fouling problems
+              </p>
+              <div className="text-[11px] text-black font-bold  w-full justify-end flex ">
+                June 5, 2024
+              </div>
             </div>
           </Link>
 
           {/* Blog Post 2 */}
           <Link
             to="/blogs/marine-biofouling"
-            className="flex flex-col items-center text-center w-full sm:w-[45%] lg:w-[30%] bg-white border border-gray-300 rounded-[21px] shadow-md text-inherit no-underline overflow-hidden p-4"
+            className="flex flex-col w-full sm:w-[45%] lg:w-[30%] bg-white border border-gray-300 rounded-[21px] shadow-md text-inherit no-underline overflow-hidden "
           >
             <img
               src={"/images/Blog-2.jpg"}
-              alt="Blog 2"
-              className="rounded-[10px] w-full h-auto mb-4"
-            />
-            <h3 className="mb-2 text-lg text-black font-semibold">
-              Marine Biofouling
-            </h3>
-            <p className="mb-4 text-base font-normal hover:text-[#002fff]">
-              Marine biofouling organisms can affect boats in a variety of ways.
-            </p>
-            <div className="text-[11px] text-black mt-auto font-bold self-end">
-              May 15, 2024
+              alt="Blog 1"
+              className=" w-full h-auto mb-4"
+            />{" "}
+            <div className="p-5 flex flex-col items-center ">
+              <h3 className="mb-2 text-lg  text-black font-semibold">
+                Marine Biofouling
+              </h3>
+
+              <p className="mb-4 text-base font-normal text-[#002fff] text-center">
+                Marine biofouling organisms can affect boats in a variety of
+                ways.
+              </p>
+              <div className="text-[11px] text-black font-bold  w-full justify-end flex ">
+                June 5, 2024
+              </div>
             </div>
           </Link>
         </div>

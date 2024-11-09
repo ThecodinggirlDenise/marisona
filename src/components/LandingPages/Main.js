@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Testimonials from "./Testimonials";
 import MapComponent from "../../Englishpages/MapComponent";
+// eslint-disable-next-line no-unused-vars
 import { GoogleMap } from "@react-google-maps/api";
 export default function Main() {
   const { t } = useTranslation();
