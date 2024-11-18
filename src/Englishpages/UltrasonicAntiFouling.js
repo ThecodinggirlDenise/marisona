@@ -2,6 +2,7 @@
 /* eslint-disable no-undef */
 /* eslint-disable react/jsx-no-undef */
 /* eslint-disable jsx-a11y/alt-text */
+
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
@@ -290,62 +291,45 @@ export default function UltrasonicAntiFouling() {
           </div>
         </div>
       </section>
-      <section>
+      <section className="flex flex-col items-center">
+        {/* TODO:CHANGE THE THE DESCRIPTION,IMAGE SOURCE,LINK,ETC..*/}
         <div>
-          <h1 className="text-4xl pl-20 mt-24 mb-16 font-bold">Other Blogs</h1>
-        </div>
-        <Link to="/blog">
-          <button className="mt-2 py-2 px-12 sm:ml-[900px] border border-slate-950 text-slate-900 rounded-lg hover:bg-slate-900 hover:text-white hover:font-medium">
-            Explore All Blogs
-          </button>
-        </Link>
-        <section className="w-full max-w-6xl">
-          <div className="flex flex-wrap justify-center gap-6 p-4 md:p-7 mx-auto">
-            {/* Blog Post 1 */}
-            <Link
-              to="/blogs/ultrasonic-antifouling-system"
-              className="flex flex-col items-center text-center w-full sm:w-[45%] lg:w-[30%] bg-white border border-gray-300 rounded-[21px] shadow-md text-inherit no-underline overflow-hidden p-4"
-            >
-              <img
-                src={"/images/Blog-1.jpg"}
-                alt="Blog 1"
-                className="rounded-[10px] w-full h-auto mb-4"
-              />
-              <h3 className="mb-2 text-lg text-black font-semibold">
-                What is an Ultrasonic Anti-Fouling System?
-              </h3>
-              <p className="mb-4 text-base font-normal hover:text-[#002fff]">
-                Marisonia has developed a revolutionary machine technology
-                designed to solve fouling problems
-              </p>
-              <div className="text-[11px] text-black mt-auto font-bold self-end">
-                June 5, 2024
-              </div>
-            </Link>
-
-            {/* Blog Post 2 */}
-            <Link
-              to="/blogs/marine-biofouling"
-              className="flex flex-col items-center text-center w-full sm:w-[45%] lg:w-[30%] bg-white border border-gray-300 rounded-[21px] shadow-md text-inherit no-underline overflow-hidden p-4"
-            >
-              <img
-                src={"/images/Blog-2.jpg"}
-                alt="Blog 2"
-                className="rounded-[10px] w-full h-auto mb-4"
-              />
-              <h3 className="mb-2 text-lg text-black font-semibold">
-                Marine Biofouling
-              </h3>
-              <p className="mb-4 text-base font-normal hover:text-[#002fff]">
-                Marine biofouling organisms can affect boats in a variety of
-                ways.
-              </p>
-              <div className="text-[11px] text-black mt-auto font-bold self-end">
-                May 15, 2024
-              </div>
+          <div className="flex justify-between mt-10">
+            <h1 className="text-4xl pl-20  mb-16 font-bold">Other Blogs</h1>
+            <Link to="/blog">
+              <button className="mt-2 py-2 px-12 border border-slate-950 text-slate-900 rounded-lg hover:bg-slate-900 hover:text-white hover:font-medium">
+                Explore All Blogs
+              </button>
             </Link>
           </div>
-        </section>
+          <section className="w-full max-w-6xl">
+            <div className="flex flex-wrap gap-6 p-4 md:p-7 mx-auto">
+              {/* Blog Post 1 */}
+              <Link
+                to="/blogs/marine-biofouling"
+                className="flex flex-col items-center text-center w-full lg:w-[60%] bg-white border border-gray-300 rounded-[21px] shadow-md text-inherit no-underline overflow-hidden p-4"
+              >
+                <div className="overflow-hidden w-full rounded-[10px] mb-4">
+                  <img
+                    src={"/images/Blog-2.jpg"}
+                    alt="Blog 1"
+                    className="transition-transform duration-300 ease-in-out transform hover:scale-105"
+                  />
+                </div>
+                <h3 className="mb-2 text-lg text-black font-semibold">
+                  Marine Biofouling
+                </h3>
+                <p className="mb-4 text-base font-normal hover:text-[#002fff]">
+                  Marine biofouling organisms can affect boats in a variety of
+                  ways.
+                </p>
+                <div className="text-[11px] text-black mt-auto font-bold self-end">
+                  June 5, 2024
+                </div>
+              </Link>
+            </div>
+          </section>
+        </div>
       </section>
     </div>
   );

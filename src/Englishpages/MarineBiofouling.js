@@ -180,134 +180,117 @@ export default function UltrasonicAntiFouling() {
             </div>
           </div>
         </div>
-        <h1 className="text-4xl ml-9 mt-12 mb-4  font-extrabold  text-left text-black">
-          What is Marine Biofouling?
-        </h1>
-        <p className="sm:ml-9 text-gray-600">
-          Marine biofouling is the process ofunwanted organic materials such as
-          bacteria, algae, barnacles, mussels,tubeworms, etc., adhering to
-          certain surfaces submerged in water like shiphulls, boats, ropes,
-          renewable energy structures, and similar materials. Althoughit is
-          generally known to form on ship hulls, this process fundamentally
-          occursanywhere in contact with water, such as water inlets, pipe
-          works, and ponds.
-        </p>
-        <br />
-        <p className="sm:ml-9 sm:mb-44 text-gray-600">
-          The process of marine biofouling takesplace in four stages: At the
-          first stage, bacterial and organic materialpresent in the water forms
-          a conditioning film around the submerged solid surfaceby attaching to
-          the surface; at the second stage, a biofilm forms consisting
-          ofmicrobial communities attaching to the conditioning film; at the
-          third stage invertebratesand their larvae colonize the biofilm; and in
-          the last stage a complexcommunity of larger animals and organisms is
-          formed over the surface. Since acoat of living organisms forms on
-          immersed surfaces or inside parts ofsubmerged materials, this
-          phenomenon can lead to reduced performance of systems,watercraft, or
-          devices used in waterborne activities due to the unwantedconditions it
-          creates.
-        </p>
-        <section className="w-full max-w-7xl mx-auto my-16 p-8 bg-blue-900 rounded-3xl flex items-center justify-between">
-          {/* Left Side - Image */}
-          <div className="w-1/2 flex justify-center h-96 ">
-            <img
-              src="/images/peronImage.png" // Update with the correct image path
-              alt="Special Pricing"
-              className="rounded-3xl object-cover"
-            />
-          </div>
-
-          {/* Right Side - Text */}
-          <div className="w-1/2 text-white">
-            <h2 className="text-6xl font-bold mb-4">
-              Get a Special Pricing for Your Vessels!
-            </h2>
-            <p className="text-lg mb-6">
-              You can contact us to protect your boat with Marisonia’s
-              innovative technology. Afterwards, our team will get in touch with
-              you.
-            </p>
-            <Link to="/contact">
-              <button className="bg-transparent border-2 border-white text-white rounded-lg py-2 px-8 font-semibold hover:bg-white hover:text-blue-900 transition">
-                Contact Us
-              </button>
-            </Link>
-          </div>
-        </section>
-        <section>
-          <h1 className="text-4xl ml-9 mt-12 mb-4  font-semibold text-left text-black">
-            What are The Most Common Marine Fouling Organisms?
-          </h1>
-          <p className="sm:mr-56 sm:ml-14 sm:mb-96 text-gray-600">
-            There are several various biofoulingorganisms, which can be
-            categorized into two main headings: microfoulingorganisms and
-            macrofouling organisms. As the name suggests, while the
-            formerconsists of much smaller structures, such as the formation of
-            conditioning filmand biofilm, bacteria, and other organisms, the
-            latter is the accumulation of largeranimals/organisms. These
-            organisms can be separated into two subcategories aswell.
-            Soft-fouling organisms and hard-fouling organisms. ‍
-          </p>
-        </section>
-        <section>
-          <div>
-            <h1 className="text-4xl pl-20 mt-24 mb-16 font-bold">
-              Other Blogs
+        <div className="flex justify-center">
+          <div className="max-w-[1100px]">
+            <h1 className="text-4xl ml-9 mt-12 mb-4  font-extrabold  text-left text-black">
+              What is Marine Biofouling?
             </h1>
+            <p className="sm:ml-9 text-gray-600">
+              Marine biofouling is the process ofunwanted organic materials such
+              as bacteria, algae, barnacles, mussels,tubeworms, etc., adhering
+              to certain surfaces submerged in water like shiphulls, boats,
+              ropes, renewable energy structures, and similar materials.
+              Althoughit is generally known to form on ship hulls, this process
+              fundamentally occursanywhere in contact with water, such as water
+              inlets, pipe works, and ponds.
+            </p>
+            <br />
+            <p className="sm:ml-9 sm:mb-44 text-gray-600">
+              The process of marine biofouling takesplace in four stages: At the
+              first stage, bacterial and organic materialpresent in the water
+              forms a conditioning film around the submerged solid surfaceby
+              attaching to the surface; at the second stage, a biofilm forms
+              consisting ofmicrobial communities attaching to the conditioning
+              film; at the third stage invertebratesand their larvae colonize
+              the biofilm; and in the last stage a complexcommunity of larger
+              animals and organisms is formed over the surface. Since acoat of
+              living organisms forms on immersed surfaces or inside parts
+              ofsubmerged materials, this phenomenon can lead to reduced
+              performance of systems,watercraft, or devices used in waterborne
+              activities due to the unwantedconditions it creates.
+            </p>
+            <section className="w-full max-w-7xl mx-auto my-16 p-8 bg-blue-900 rounded-3xl flex items-center justify-between">
+              {/* Left Side - Image */}
+              <div className="w-1/2 flex justify-center h-96 ">
+                <img
+                  src="/images/peronImage.png" // Update with the correct image path
+                  alt="Special Pricing"
+                  className="rounded-3xl object-cover"
+                />
+              </div>
+
+              {/* Right Side - Text */}
+              <div className="w-1/2 text-white">
+                <h2 className="text-6xl font-bold mb-4">
+                  Get a Special Pricing for Your Vessels!
+                </h2>
+                <p className="text-lg mb-6">
+                  You can contact us to protect your boat with Marisonia’s
+                  innovative technology. Afterwards, our team will get in touch
+                  with you.
+                </p>
+                <Link to="/contact">
+                  <button className="bg-transparent border-2 border-white text-white rounded-lg py-2 px-8 font-semibold hover:bg-white hover:text-blue-900 transition">
+                    Contact Us
+                  </button>
+                </Link>
+              </div>
+            </section>
+            <section>
+              <h1 className="text-4xl ml-9 mt-12 mb-4  font-semibold text-left text-black">
+                What are The Most Common Marine Fouling Organisms?
+              </h1>
+              <p className="sm:mr-56 sm:ml-14 sm:mb-96 text-gray-600">
+                There are several various biofoulingorganisms, which can be
+                categorized into two main headings: microfoulingorganisms and
+                macrofouling organisms. As the name suggests, while the
+                formerconsists of much smaller structures, such as the formation
+                of conditioning filmand biofilm, bacteria, and other organisms,
+                the latter is the accumulation of largeranimals/organisms. These
+                organisms can be separated into two subcategories aswell.
+                Soft-fouling organisms and hard-fouling organisms. ‍
+              </p>
+            </section>
           </div>
-
-          <section className="w-full max-w-6xl">
-            <Link to="/blog">
-              <button className="mt-2 py-2 px-12 sm:ml-[900px] border border-slate-950 text-slate-900 rounded-lg hover:bg-slate-900 hover:text-white hover:font-medium">
-                Explore All Blogs
-              </button>
-            </Link>
-            <div className="flex flex-wrap justify-center gap-6 p-4 md:p-7 mx-auto">
-              {/* Blog Post 1 */}
-              <Link
-                to="/blogs/ultrasonic-antifouling-system"
-                className="flex flex-col items-center text-center w-full sm:w-[45%] lg:w-[30%] bg-white border border-gray-300 rounded-[21px] shadow-md text-inherit no-underline overflow-hidden p-4"
-              >
-                <img
-                  src={"/images/Blog-1.jpg"}
-                  alt="Blog 1"
-                  className="rounded-[10px] w-full h-auto mb-4"
-                />
-                <h3 className="mb-2 text-lg text-black font-semibold">
-                  What is an Ultrasonic Anti-Fouling System?
-                </h3>
-                <p className="mb-4 text-base font-normal hover:text-[#002fff]">
-                  Marisonia has developed a revolutionary machine technology
-                  designed to solve fouling problems
-                </p>
-                <div className="text-[11px] text-black mt-auto font-bold self-end">
-                  June 5, 2024
-                </div>
-              </Link>
-
-              {/* Blog Post 2 */}
-              <Link
-                to="/blogs/marine-biofouling"
-                className="flex flex-col items-center text-center w-full sm:w-[45%] lg:w-[30%] bg-white border border-gray-300 rounded-[21px] shadow-md text-inherit no-underline overflow-hidden p-4"
-              >
-                <img
-                  src={"/images/Blog-2.jpg"}
-                  alt="Blog 2"
-                  className="rounded-[10px] w-full h-auto mb-4"
-                />
-                <h3 className="mb-2 text-lg text-black font-semibold">
-                  Marine Biofouling
-                </h3>
-                <p className="mb-4 text-base font-normal hover:text-[#002fff]">
-                  Marine biofouling organisms can affect boats in a variety of
-                  ways.
-                </p>
-                <div className="text-[11px] text-black mt-auto font-bold self-end">
-                  May 15, 2024
-                </div>
+        </div>
+        <section className="flex flex-col items-center">
+          <div>
+            <div className="flex justify-between">
+              <h1 className="text-4xl pl-20  mb-16 font-bold">Other Blogs</h1>
+              <Link to="/blog">
+                <button className="mt-2 py-2 px-12 border border-slate-950 text-slate-900 rounded-lg hover:bg-slate-900 hover:text-white hover:font-medium">
+                  Explore All Blogs
+                </button>
               </Link>
             </div>
-          </section>
+            <section className="w-full max-w-6xl">
+              <div className="flex flex-wrap gap-6 p-4 md:p-7 mx-auto">
+                {/* Blog Post 1 */}
+                <Link
+                  to="/blogs/ultrasonic-antifouling-system"
+                  className="flex flex-col items-center text-center w-full lg:w-[60%] bg-white border border-gray-300 rounded-[21px] shadow-md text-inherit no-underline overflow-hidden p-4"
+                >
+                  <div className="overflow-hidden w-full rounded-[10px] mb-4">
+                    <img
+                      src={"/images/Blog-1.jpg"}
+                      alt="Blog 1"
+                      className="transition-transform duration-300 ease-in-out transform hover:scale-105"
+                    />
+                  </div>
+                  <h3 className="mb-2 text-lg text-black font-semibold">
+                    What is an Ultrasonic Anti-Fouling System?
+                  </h3>
+                  <p className="mb-4 text-base font-normal hover:text-[#002fff]">
+                    Marisonia has developed a revolutionary machine technology
+                    designed to solve fouling problems
+                  </p>
+                  <div className="text-[11px] text-black mt-auto font-bold self-end">
+                    June 5, 2024
+                  </div>
+                </Link>
+              </div>
+            </section>
+          </div>
         </section>
       </div>
     </section>
