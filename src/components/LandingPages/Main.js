@@ -107,7 +107,7 @@ export default function Main() {
             )}
           </p>
 
-          <a href="/how-it-works">
+          <a href="/products">
             <button className="bg-white text-gray-900 border-2 border-gray-900 rounded-lg py-3 px-8 font-bold transform transition-transform duration-300 hover:scale-105 hover:bg-gray-900 hover:text-white mt-5">
               {t("View Product")}
             </button>
