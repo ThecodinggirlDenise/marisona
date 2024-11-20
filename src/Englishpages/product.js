@@ -143,20 +143,10 @@ function Product() {
         {/* Main Content */}
         <div className="main-content flex-1 pr-0 lg:pr-8">
           <h1 className="text-4xl lg:text-4xl font-bold mb-10 lg:mb-14 mt-10 lg:mt-16 text-black font-montserrat text-center lg:text-left">
-            Marisonia Ultrasonic Transducers: Precise Installation for Enhanced
-            Protection
+            {t("PL")}
           </h1>
-          <p className="text-gray-700 mb-4">
-            The Marisonia ultrasonic transducers are easily affixed to the dry
-            side of the surface to be safeguarded. These transducers generate a
-            minuscule, finely modulated pressure pattern within the water layer,
-            disrupting any initial contact with predator species.
-          </p>
-          <p className="text-gray-700 mb-4">
-            Ensuring seamless integration, Marisonia facilitates easy
-            installation through our proficient installation teams, allowing
-            optimal system utilization within a mere half-day timeframe!
-          </p>
+          <p className="text-gray-700 mb-4">{t("PL2")}</p>
+          <p className="text-gray-700 mb-4">{t("PL3")}</p>
 
           {/* Images */}
           <div className="images mb-8">
@@ -169,39 +159,26 @@ function Product() {
 
           {/* Warranty Section */}
           <h2 className="text-3xl lg:text-2xl font-bold mb-4 text-start text-black font-montserrat">
-            Warranty
+            {t("W")}
           </h2>
-          <p className="text-gray-700 mb-2">
-            Marisonia provides a comprehensive 2-year warranty for your
-            assurance.
-          </p>
-          <h3 className="text-lg lg:text-2xl font-semibold mb-2">
-            Who is Covered?
-          </h3>
-          <ul className="list-disc pl-5 text-slate-950">
-            <li>
-              Installation of the product must be performed by authorized
-              representatives.
-            </li>
-            <li>
-              The control box and the transducers should not be dealt without an
-              authorized representative.
-            </li>
+          <p className="text-gray-700 mb-2">{t("WP")}</p>
+          <h3 className="text-lg lg:text-2xl font-semibold mb-2">{t("WIC")}</h3>
+          <ul className="list-disc pl-5 text-slate-950 mb-8">
+            {t("WICP")}
+            <li>{t("WICP1")}</li>
+            <li>{t("WICP2")}</li>
           </ul>
-          <p className="text-slate-950 mt-4">
-            Please note: This warranty primarily covers durability and quality
-            under specified usage conditions.
-          </p>
+          <p className="text-slate-950 mt-4">{t("WICP3")}</p>
         </div>
 
         {/* Sidebar CTA Section */}
         <div className=" sticky top-[90px] cta-sidebar w-full lg:w-80 flex-shrink-0 bg-gray-100 p-6 rounded-lg shadow-md mt-10 lg:mt-0 lg:h-80">
           <h2 className="text-2xl lg:text-4xl font-bold mb-4 text-slate-950 font-montserrat text-center lg:text-left">
-            Get a Special Pricing for Your Vessels!
+            {t("GASP")}
           </h2>
           <a href="/contact">
             <button className="bg-blue-950 text-white rounded-lg py-2 px-5 w-full lg:w-64 font-semibold mt-4 hover:bg-blue-800 transition">
-              Get a Quote
+              {t("GAQ")}
               <FontAwesomeIcon icon={faArrowRightLong} className="ml-2" />
             </button>
           </a>

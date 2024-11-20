@@ -121,6 +121,20 @@ const resources = {
         "Ultrasonic antifouling systems pose no harm to marine life, emitting waves that don't interfere with fish or marine mammals' sonar and avoiding the release of harmful chemicals into the food chain.",
       Tech: "Tehnical",
       Spec: "Specifications",
+      PL: "Marisonia Ultrasonic Transducers: Precise Installation for Enhanced Protection",
+      PL2: "The Marisonia ultrasonic transducers are easily affixed to the dry  side of the surface to be safeguarded. These transducers generate a minuscule, finely modulated pressure pattern within the water layer, disrupting any initial contact with predator species.",
+      PL3: "Ensuring seamless integration, Marisonia facilitates easy installation through our proficient installation teams, allowing optimal system utilization within a mere half-day timeframe!",
+      W: "Warranty",
+      WP: "Marisonia provides a comprehensive 2-year warranty for your assurance.",
+      WIC: "Who is Covered?",
+      WICP: "Marisonia offers a comprehensive 2-year manufacturer’s warranty under the following conditions:",
+      WICP1:
+        " Installation of the product must be performed by authorized representatives.",
+      WICP2:
+        "The control box and the transducers should not be dealt without an authorized representative.",
+      WICP3:
+        "Please note: This warranty primarily covers durability and quality under specified usage conditions.",
+      GASP: "  Get a Special Pricing for Your Vessels!",
     },
   },
   tr: {
@@ -242,6 +256,19 @@ const resources = {
         "Tekne altı kirlenme önleyici sistem deniz yaşamına zarar vermez, balıkların veya deniz canlılarını etkilemeyen dalgalar yayar ve zararlı kimyasalların besin zincirine salınmasını engeller.",
       Tech: "Teknik",
       Spec: "Özellikleri",
+      PL: "Marisonia Ultrasonik Dönüştürücüler: Gelişmiş Koruma için Hassas Kurulum",
+      PL2: "Marisonia ultrasonik dönüştürücüleri, korunacak yüzeyin kuru tarafına kolayca uygulanır. Bu dönüştürücüler, korunan yüzeyle doğrudan temas halinde olan su katmanı içinde çok küçük, ince ayarlı bir basınç modeli oluşturur.",
+      PL3: "Marisonia, uzman kurulum ekiplerimiz aracılığıyla kolay kurulumu sayesinde yalnızca yarım günlük bir zaman dilimi içinde kullanıma hazır hale gelir.",
+      W: "Garanti",
+      WP: "Marisonia, uzman kurulum ekiplerimiz aracılığıyla kolay kurulumu sayesinde yalnızca yarım günlük bir zaman dilimi içinde kullanıma hazır hale gelir.",
+      WIC: "Kimleri Kapsamaktadır?",
+      WICP: "Marisonia aşağıdaki koşullar altında 2 yıl boyunca kapsamlı bir üretici garantisi sunmaktadır:",
+      WICP1: "Ürün kurulumu yetkili temsilciler tarafından yapılmalıdır.",
+      WICP2:
+        "Kontrol kutusuna ve/veya transdüserlere yetkili teknisyenler dışında müdahale edilmemelidir.",
+      WICP3:
+        "Bu garanti öncelikli olarak belirlenen kullanım koşulları altında dayanıklılık ve kaliteyi kapsar.",
+      GASP: "Teknelerinize Özel Fiyat Alın!",
     },
   },
 };
