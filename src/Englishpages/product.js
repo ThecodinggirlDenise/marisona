@@ -3,8 +3,10 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "react-i18next";
+function Product() {
+  const { t } = useTranslation();
 
-export default function Product() {
   return (
     <div className="flex flex-col items-center justify-center w-full">
       {/* Section 1 */}
@@ -12,15 +14,15 @@ export default function Product() {
         <div className="flex flex-col lg:flex-row justify-center shadow-lg w-full lg:w-[1000px] mt-10 rounded-[2rem] lg:rounded-[7rem] overflow-hidden">
           <div className="flex flex-col font-montserrat p-6 lg:mt-32 lg:ml-10 text-center lg:text-left">
             <h2 className="font-extrabold text-blue-950 text-2xl lg:text-3xl mt-24">
-              We can provide tailored solutions for your vessel.
+              {t("PH1")}
             </h2>
-            <p className="mt-4 lg:mt-6 text-sm lg:text-md">
-              Explore our wide range of services.
-            </p>
-            <button className="text-lg lg:text-[2.05rem] flex items-center justify-center w-full lg:w-72 bg-blue-950 text-white px-6 py-3 mt-6 rounded-3xl font-semibold hover:bg-blue-800 transition-colors">
-              Get a Quote
-              <FontAwesomeIcon icon={faArrowRightLong} className="ml-2" />
-            </button>
+            <p className="mt-4 lg:mt-6 text-sm lg:text-md">{t("PH1P")}</p>
+            <a href="/contact">
+              <button className="text-lg lg:text-[2.05rem] flex items-center justify-center w-full lg:w-72 bg-blue-950 text-white px-6 py-3 mt-6 rounded-3xl font-semibold hover:bg-blue-800 transition-colors">
+                {t("GAQ")}
+                <FontAwesomeIcon icon={faArrowRightLong} className="ml-2" />
+              </button>
+            </a>
           </div>
           <img
             src="/images/main2.png"
@@ -38,17 +40,12 @@ export default function Product() {
           />
           <div className="flex flex-col gap-5 text-center lg:text-left px-4 lg:px-18">
             <h2 className="text-3xl lg:text-4xl text-blue-950 font-extrabold">
-              Going Green on the Waves: Embrace Environmentally Friendly Boating
-              Solutions
+              {t("PH2H")}
             </h2>
             <h4 className="text-xl lg:text-lg font-extrabold text-slate-950">
-              Biocide Use in Marine Coatings Faces Growing Regulations
+              {t("PH2SH")}
             </h4>
-            <p className="text-base lg:text-lg text-black ">
-              Authorities worldwide are increasingly imposing restrictions and
-              bans on biocide use in marine coatings to protect marine life and
-              human health.
-            </p>
+            <p className="text-base lg:text-lg text-black ">{t("PH2P")}</p>
           </div>
         </div>
       </section>
@@ -57,37 +54,30 @@ export default function Product() {
       <section className="w-full flex flex-col lg:flex-row justify-center items-center mt-16 lg:mt-36 px-4 font-montserrat max-w-5xl gap-5">
         <div className="flex flex-col  w-full lg:w-1/2 gap-4">
           <h2 className="text-3xl lg:text-2xl text-blue-950 font-extrabold text-center lg:text-left">
-            Green Waves Ahead: Marisonia's Eco-friendly Solution
+            {t("PH3H")}
           </h2>
 
           {/* Divider Lines */}
           <hr className="border-t border-gray-300 w-full" />
 
           <h4 className="text-xl lg:text-xl font-extrabold text-slate-950">
-            Invasive Non-Native Species Threat
+            {t("PH3SH1")}
           </h4>
-          <p className="text-base lg:text-xl text-black">
-            Authorities worldwide are increasingly imposing restrictions and
-            bans on biocide use in marine coatings to protect marine life and
-            human health.
-          </p>
+          <p className="text-base lg:text-xl text-black">{t("PH3P1")}</p>
 
           {/* Divider Lines */}
           <hr className="border-t border-gray-300 w-full" />
 
           <h4 className="text-xl lg:text-xl font-extrabold text-slate-950">
-            Safe Ultrasonic Antifouling
+            {t("PH3SH2")}
           </h4>
-          <p className="text-base lg:text-xl text-black">
-            Authorities worldwide are increasingly imposing restrictions and
-            bans on biocide use in marine coatings to protect marine life and
-            human health.
-          </p>
-
-          <button className="bg-blue-950 text-white rounded-lg py-2 px-5 w-full lg:w-64 font-semibold mt-4 hover:bg-blue-800 transition">
-            Get a Quote
-            <FontAwesomeIcon icon={faArrowRightLong} className="ml-2" />
-          </button>
+          <p className="text-base lg:text-xl text-black">{t("PH3P2")}</p>
+          <a href="/contact">
+            <button className="bg-blue-950 text-white rounded-lg py-2 px-5 w-full lg:w-64 font-semibold mt-4 hover:bg-blue-800 transition">
+              {t("GAQ")}
+              <FontAwesomeIcon icon={faArrowRightLong} className="ml-2" />
+            </button>
+          </a>
         </div>
 
         {/* Image Section */}
@@ -102,7 +92,7 @@ export default function Product() {
       {/* Technical Specifications Section */}
       <section className="max-w-4xl mx-auto mt-16 p-6 font-montserrat flex flex-col items-center justify-center">
         <h2 className="text-2xl lg:text-3xl font-extrabold text-blue-950 mb-8">
-          Technical <span className="text-slate-400">Specifications</span>
+          {t("Tech")} <span className="text-slate-400"> {t("Spec")}</span>
         </h2>
         <div className="space-y-8 w-full">
           {[
@@ -209,12 +199,15 @@ export default function Product() {
           <h2 className="text-2xl lg:text-4xl font-bold mb-4 text-slate-950 font-montserrat text-center lg:text-left">
             Get a Special Pricing for Your Vessels!
           </h2>
-          <button className="bg-blue-950 text-white rounded-lg py-2 px-5 w-full lg:w-64 font-semibold mt-4 hover:bg-blue-800 transition">
-            Get a Quote
-            <FontAwesomeIcon icon={faArrowRightLong} className="ml-2" />
-          </button>
+          <a href="/contact">
+            <button className="bg-blue-950 text-white rounded-lg py-2 px-5 w-full lg:w-64 font-semibold mt-4 hover:bg-blue-800 transition">
+              Get a Quote
+              <FontAwesomeIcon icon={faArrowRightLong} className="ml-2" />
+            </button>
+          </a>
         </div>
       </div>
     </div>
   );
 }
+export default Product;

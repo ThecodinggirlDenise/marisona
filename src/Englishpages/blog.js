@@ -21,8 +21,8 @@ export default function Blog() {
       <section className="w-full max-w-9xl">
         <div className="flex flex-wrap justify-center gap-6 ">
           {/* Blog Post 1 */}
-          <Link
-            to="/blogs/ultrasonic-antifouling-system"
+          <a
+            href="/blogs/ultrasonic-antifouling-system"
             className="flex flex-col w-full sm:w-[45%] lg:w-[25%] bg-white border border-gray-300 rounded-[21px] shadow-md text-inherit no-underline overflow-hidden "
           >
             <img src={"/images/Blog-1.jpg"} alt="Blog 1" className=" c" />{" "}
@@ -39,11 +39,11 @@ export default function Blog() {
                 June 5, 2024
               </div>
             </div>
-          </Link>
+          </a>
 
           {/* Blog Post 2 */}
-          <Link
-            to="/blogs/marine-biofouling"
+          <a
+            href="/blogs/marine-biofouling"
             className="flex flex-col w-full sm:w-[45%] lg:w-[25%] bg-white border border-gray-300 rounded-[21px] shadow-md text-inherit no-underline overflow-hidden "
           >
             <img
@@ -64,7 +64,7 @@ export default function Blog() {
                 June 5, 2024
               </div>
             </div>
-          </Link>
+          </a>
         </div>
       </section>
     </div>

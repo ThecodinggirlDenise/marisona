@@ -3,11 +3,12 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import LanguageSwitcher from "../../LanguageSwitcher";
 import logo from "../../Logo/MarisonaLogo.png";
+import { motion, useScroll } from "motion/react";
 
 function Navbar() {
   const { t } = useTranslation();
   const [sidebar, setSidebar] = useState(false);
-
+  const { scrollYProgress } = useScroll();
   const toggleSidebar = () => {
     setSidebar(!sidebar);
   };
@@ -21,16 +22,20 @@ function Navbar() {
   }, [sidebar]);
 
   return (
-    <div className="bg-[#1f2f54] text-white py-5 px-6 sm:px-16 w-full flex items-center justify-between h-[90px] fixed top-0 left-0 right-0 z-50 shadow-md">
+    <div className="bg-[#1f2f54] text-white py-5 px-6 sm:px-16 w-full flex items-center justify-between h-[90px] absolute top-0 left-0 right-0 z-50 shadow-md">
+      <motion.div
+        className="progress-bar top-0 left-0 right-0 fixed h-2 bg-[#57aef4]"
+        style={{ scaleX: scrollYProgress }}
+      />
       {/* Left Section - Logo */}
       <div className="flex items-center mr-auto">
-        <Link to="/">
+        <a href="/">
           <img
             src={logo}
             alt="Logo"
             className=" logo h-[50px] pt-2 transition-transform duration-300 ease-in-out hover:scale-110 hide-logo:hidden" // Apply custom class here
           />
-        </Link>
+        </a>
       </div>
 
       {/* Center Section - Nav Items for Medium and Larger Screens */}

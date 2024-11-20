@@ -12,7 +12,7 @@ export default function ContactUs() {
           defaultValue="Indivual"
           onValueChange={(value) => setActiveTab(value)}
         >
-          <div className="absolute inset-0 flex justify-center mt-28">
+          <div className=" flex justify-center mt-28">
             <TabsList className="bg-gray-200 mt-3 rounded-[1.8rem] border border-[#e9f4ff] flex justify-center p-5 h-20">
               <TabsTrigger
                 value="Indivual"
@@ -44,7 +44,7 @@ export default function ContactUs() {
               value="Indivual"
               className={`${
                 activeTab === "Indivual" ? "block" : "hidden"
-              } mt-[80px] p-5 rounded-lg transition-colors w-full sm:w-[600px] text-black bg-white`}
+              } mt-[80px] p-5 rounded-lg z-100 transition-colors w-full sm:w-[600px] text-black bg-white`}
             >
               <div>
                 <h2 className="font-extrabold text-left">Contact Us</h2>
@@ -147,7 +147,9 @@ export default function ContactUs() {
               } mt-[80px] p-5 rounded-lg transition-colors w-full sm:w-[600px] text-black bg-white`}
             >
               <div>
-                <h2 className="font-extrabold text-left">Business Partnership</h2>
+                <h2 className="font-extrabold text-left">
+                  Business Partnership
+                </h2>
                 <p>
                   To seize the opportunity to become a part of this innovative
                   product by establishing a business partnership with Marisonia,
@@ -244,15 +246,18 @@ export default function ContactUs() {
           <div className="mt-5 w-full sm:w-[70%] ml-0 flex flex-col items-start p-5">
             <label className="flex items-center mb-3 w-full">
               <input type="checkbox" className="mr-2" />
-           <div className="w-full">   I accept the {" "}
-              <a href="/terms-of-service" className="underline text-blue-500">
-                Terms of Service
-              </a>{" "}
-              and{" "}
-              <a href="/privacy-policy" className="underline text-blue-500">
-                Privacy Policy
-              </a>
-              .</div>
+              <div className="w-full">
+                {" "}
+                I accept the{" "}
+                <a href="/terms-of-service" className="underline text-blue-500">
+                  Terms of Service
+                </a>{" "}
+                and{" "}
+                <a href="/privacy-policy" className="underline text-blue-500">
+                  Privacy Policy
+                </a>
+                .
+              </div>
             </label>
             <button
               type="submit"

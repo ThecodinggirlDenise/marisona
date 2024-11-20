@@ -171,11 +171,11 @@ export default function UltrasonicAntiFouling() {
                 <h2 className="text-2xl lg:text-4xl font-bold mb-4 text-white font-montserrat text-center lg:text-left">
                   Get a Special Pricing for Your Vessels!
                 </h2>
-                <Link to="/contact">
+                <a href="/contact">
                   <button className="bg-white text-black rounded-lg  py-5 px-9   font-semibold mt-4 hover:bg- transition">
                     Get a Quote
                   </button>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -229,11 +229,11 @@ export default function UltrasonicAntiFouling() {
                   innovative technology. Afterwards, our team will get in touch
                   with you.
                 </p>
-                <Link to="/contact">
+                <a href="/contact">
                   <button className="bg-transparent border-2 border-white text-white rounded-lg py-2 px-8 font-semibold hover:bg-white hover:text-blue-900 transition">
                     Contact Us
                   </button>
-                </Link>
+                </a>
               </div>
             </section>
             <section>
@@ -257,17 +257,17 @@ export default function UltrasonicAntiFouling() {
           <div>
             <div className="flex justify-between">
               <h1 className="text-4xl pl-20  mb-16 font-bold">Other Blogs</h1>
-              <Link to="/blog">
+              <a href="/blog">
                 <button className="mt-2 py-2 px-12 border border-slate-950 text-slate-900 rounded-lg hover:bg-slate-900 hover:text-white hover:font-medium">
                   Explore All Blogs
                 </button>
-              </Link>
+              </a>
             </div>
             <section className="w-full max-w-6xl">
               <div className="flex flex-wrap gap-6 p-4 md:p-7 mx-auto">
                 {/* Blog Post 1 */}
-                <Link
-                  to="/blogs/ultrasonic-antifouling-system"
+                <a
+                  href="/blogs/ultrasonic-antifouling-system"
                   className="flex flex-col items-center text-center w-full lg:w-[60%] bg-white border border-gray-300 rounded-[21px] shadow-md text-inherit no-underline overflow-hidden p-4"
                 >
                   <div className="overflow-hidden w-full rounded-[10px] mb-4">
@@ -287,7 +287,7 @@ export default function UltrasonicAntiFouling() {
                   <div className="text-[11px] text-black mt-auto font-bold self-end">
                     June 5, 2024
                   </div>
-                </Link>
+                </a>
               </div>
             </section>
           </div>
