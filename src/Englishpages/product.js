@@ -1,36 +1,46 @@
+/* eslint-disable no-undef */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
 function Product() {
   const { t } = useTranslation();
-
+  // eslint-disable-next-line no-unused-vars
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false); // Add this line
   return (
     <div className="flex flex-col items-center justify-center w-full">
       {/* Section 1 */}
-      <section className="w-4/5 px-4 flex items-center justify-center mt-5 sm:mt-24">
-        <div className="flex flex-col lg:flex-row justify-center shadow-lg w-full lg:w-[1000px] mt-10 rounded-[2rem] lg:rounded-[7rem] overflow-hidden">
-          <div className="flex flex-col font-montserrat p-6 lg:mt-32 lg:ml-10 text-center lg:text-left">
-            <h2 className="font-extrabold text-blue-950 text-2xl lg:text-3xl mt-24">
-              {t("PH1")}
-            </h2>
-            <p className="mt-4 lg:mt-6 text-sm lg:text-md">{t("PH1P")}</p>
-            <a href="/contact">
-              <button className="text-lg lg:text-[2.05rem] flex items-center justify-center w-full lg:w-72 bg-blue-950 text-white px-6 py-3 mt-6 rounded-3xl font-semibold hover:bg-blue-800 transition-colors">
-                {t("GAQ")}
-                <FontAwesomeIcon icon={faArrowRightLong} className="ml-2" />
-              </button>
-            </a>
+      <section
+        className={`relative flex flex-col md:flex-row  m-44 items-center w-full max-w-6xl bg-gray-100 shadow-md rounded-xl p-5 md:p-9 mx-auto mb-16 bg-cover bg-center h-auto ${
+          isSidebarOpen ? "hidden" : ""
+        }`}
+        style={{
+          backgroundImage: `url('/images/main3.jpg')`,
+          borderRadius: 30,
+        }}
+      >
+        {" "}
+        {/* Hide when sidebar is open */}
+        <div className="flex-1 p-5 text-left mr-0 md:mr-5">
+          <div className="text-3xl md:text-4xl font-extrabold text-blue-900 mb-6  ">
+            {t("PH1")}
           </div>
-          <img
-            src="/images/main2.png"
-            className="w-full lg:w-[500px] mt-6 lg:mt-0 "
-          />
+          <div className="text-lg text-gray-700 mb-5">{t("PH1P")}</div>
+          <a href="/contact">
+            <button className="text-lg lg:text-[1rem] flex items-center justify-center w-full lg:w-52 bg-blue-950 text-white px-6 py-3 mt-6 rounded-xl font-semibold hover:bg-blue-800 transition-colors">
+              {t("GAQ")}
+            </button>
+          </a>
         </div>
+        <img
+          src={"/images/main2.png"}
+          className=" max-w-lg rounded-lg  object-cover h-96 -mt-8"
+          alt="Ultrasound System"
+        />
       </section>
-
       {/* Section 2 */}
       <section className=" w-full flex flex-col lg:flex-row justify-center items-center mt-16 lg:mt-44 px-4 font-montserrat max-w-5xl">
         <div className="flex items-center justify-center gap-5 flex-col lg:flex-row">
@@ -97,33 +107,28 @@ function Product() {
         <div className="space-y-8 w-full">
           {[
             {
-              title: "Components of the Marisonia Anti-Fouling System",
-              content:
-                "The Marisonia anti-fouling system consists of a control box, transducers, and cabling. The number of transducers to be used may vary depending on the length of the vessel.",
+              title: t("COMAST"),
+              content: t("COMASTC"),
             },
             {
-              title: "Ultrasonic Frequency Scanning Range",
-              content:
-                "Marisonia conducts ultrasonic frequency scanning on the transducers within the range of 20-60 kHz.",
+              title: t("PSSAP"),
+              content: t("PSSAPC"),
             },
             {
-              title: "Power Supply Specifications and Protection",
-              content:
-                "The product can operate with 12/24V power supply. In the event of reverse voltage, the product remains undamaged. It is equipped with a replaceable fuse for short-circuit protection.",
+              title: t("PSSAP"),
+              content: t("PSSAPC1"),
             },
             {
-              title: "Energy Consumption and Maximum Power Usage",
-              content: "On average, the product consumes 6W.",
+              title: t("ECMPU"),
+              content: t("ECMPUC"),
             },
             {
-              title: "LED Indicators for Operational Status",
-              content:
-                "Marisonia features Power and Info LEDs. The Power LED illuminates in green when the DC-DC converter on the card produces an output. The Info LED flashes in red at different intervals to indicate the connection status of the transducers.",
+              title: t("LED"),
+              content: t("LEDC"),
             },
             {
-              title: "Device Size",
-              content:
-                "Marisonia's control box weighs 800 grams and measures 20x16x6 cm. Each transducer mounted on the boat hull weighs 430 grams and has dimensions of 6x8 cm.",
+              title: t("DS"),
+              content: t("DSC"),
             },
           ].map((item, index) => (
             <div key={index} className="border-b border-slate-300 pb-4">

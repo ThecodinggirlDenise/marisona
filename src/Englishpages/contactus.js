@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./Tabs";
 import "../global.css"; // Ensure global styles are still imported if necessary
-
+import { useTranslation } from "react-i18next";
 export default function ContactUs() {
   const [activeTab, setActiveTab] = useState("Indivual");
-
+  const { t } = useTranslation();
   return (
     <div className="flex flex-col sm:flex-row w-full mr-auto items-center justify-center mt-32">
       <div>
@@ -47,16 +47,12 @@ export default function ContactUs() {
               } mt-[80px] p-5 rounded-lg z-100 transition-colors w-full sm:w-[600px] text-black bg-white`}
             >
               <div>
-                <h2 className="font-extrabold text-left">Contact Us</h2>
-                <p>
-                  You can contact us to protect your boat with Marisonia's
-                  innovative technology. Afterwards, our team will get in touch
-                  with you.
-                </p>
+                <h2 className="font-extrabold text-left"> {t("IC")}</h2>
+                <p>{t("ICP")}</p>
                 <form className="flex flex-col gap-5">
                   <div className="flex flex-col sm:flex-row gap-5">
                     <div className="flex-1 flex flex-col">
-                      <label className="font-bold mb-1">Name*</label>
+                      <label className="font-bold mb-1">{t("N")}*</label>
                       <input
                         type="text"
                         placeholder="e.g. Ahmet"
@@ -64,7 +60,7 @@ export default function ContactUs() {
                       />
                     </div>
                     <div className="flex-1 flex flex-col">
-                      <label className="font-bold mb-1">Surname*</label>
+                      <label className="font-bold mb-1">{t("S")}*</label>
                       <input
                         type="text"
                         placeholder="e.g. Yılmaz"
@@ -74,7 +70,7 @@ export default function ContactUs() {
                   </div>
                   <div className="flex flex-col sm:flex-row gap-5">
                     <div className="flex-1 flex flex-col">
-                      <label className="font-bold mb-1">Phone*</label>
+                      <label className="font-bold mb-1">{t("P")}*</label>
                       <input
                         type="text"
                         placeholder="(123) 456-789"
@@ -82,7 +78,7 @@ export default function ContactUs() {
                       />
                     </div>
                     <div className="flex-1 flex flex-col">
-                      <label className="font-bold mb-1">E-mail*</label>
+                      <label className="font-bold mb-1">{t("E")}*</label>
                       <input
                         type="email"
                         placeholder="ornek@mail.com"
@@ -92,7 +88,7 @@ export default function ContactUs() {
                   </div>
                   <div className="flex flex-col sm:flex-row gap-5">
                     <div className="flex-1 flex flex-col">
-                      <label className="font-bold mb-1">City/District</label>
+                      <label className="font-bold mb-1">{t("CD")}</label>
                       <input
                         type="text"
                         placeholder="e.g. Ankara/Çankaya"
@@ -102,7 +98,7 @@ export default function ContactUs() {
                   </div>
                   <div className="flex flex-col sm:flex-row gap-5">
                     <div className="flex-1 flex flex-col">
-                      <label className="font-bold mb-1">Boat Types</label>
+                      <label className="font-bold mb-1">{t("BT")}</label>
                       <input
                         type="text"
                         placeholder="e.g. Sail"
@@ -110,7 +106,7 @@ export default function ContactUs() {
                       />
                     </div>
                     <div className="flex-1 flex flex-col">
-                      <label className="font-bold mb-1">Approximate Size</label>
+                      <label className="font-bold mb-1">{t("BS")}</label>
                       <input
                         type="text"
                         placeholder="e.g. 15 meters"
@@ -120,7 +116,7 @@ export default function ContactUs() {
                   </div>
                   <div className="flex flex-col sm:flex-row gap-5">
                     <div className="flex-1 flex flex-col">
-                      <label className="font-bold mb-1">Body Material</label>
+                      <label className="font-bold mb-1">{t("BM")}</label>
                       <input
                         type="text"
                         placeholder="e.g. Fiberglass, Wood, Aluminum"
@@ -129,7 +125,7 @@ export default function ContactUs() {
                     </div>
                   </div>
                   <div className="flex-1 flex flex-col">
-                    <label className="font-bold mb-1">Text Message</label>
+                    <label className="font-bold mb-1">{t("TM")}</label>
                     <textarea
                       placeholder="Leave us a message..."
                       className="w-full p-[5px] border border-black rounded-[15px] resize-vertical"
@@ -147,19 +143,12 @@ export default function ContactUs() {
               } mt-[80px] p-5 rounded-lg transition-colors w-full sm:w-[600px] text-black bg-white`}
             >
               <div>
-                <h2 className="font-extrabold text-left">
-                  Business Partnership
-                </h2>
-                <p>
-                  To seize the opportunity to become a part of this innovative
-                  product by establishing a business partnership with Marisonia,
-                  please fill out the form below. Our team will contact you as
-                  soon as possible through your provided contact information.
-                </p>
+                <h2 className="font-extrabold text-left">{t("BP")}</h2>
+                <p>{t("BPP")}</p>
                 <form className="flex flex-col gap-5">
                   <div className="flex flex-col sm:flex-row gap-5">
                     <div className="flex-1 flex flex-col">
-                      <label className="font-bold mb-1">Name*</label>
+                      <label className="font-bold mb-1">{t("N")}*</label>
                       <input
                         type="text"
                         placeholder="e.g. Ahmet"
@@ -167,7 +156,7 @@ export default function ContactUs() {
                       />
                     </div>
                     <div className="flex-1 flex flex-col">
-                      <label className="font-bold mb-1">Surname*</label>
+                      <label className="font-bold mb-1">{t("S")}*</label>
                       <input
                         type="text"
                         placeholder="e.g. Yılmaz"
@@ -177,7 +166,7 @@ export default function ContactUs() {
                   </div>
                   <div className="flex flex-col sm:flex-row gap-5">
                     <div className="flex-1 flex flex-col">
-                      <label className="font-bold mb-1">Phone*</label>
+                      <label className="font-bold mb-1">{t("P")}*</label>
                       <input
                         type="text"
                         placeholder="(123) 456-789"
@@ -185,7 +174,7 @@ export default function ContactUs() {
                       />
                     </div>
                     <div className="flex-1 flex flex-col">
-                      <label className="font-bold mb-1">E-mail*</label>
+                      <label className="font-bold mb-1">{t("E")}*</label>
                       <input
                         type="email"
                         placeholder="ornek@mail.com"
@@ -195,7 +184,7 @@ export default function ContactUs() {
                   </div>
                   <div className="flex flex-col sm:flex-row gap-5">
                     <div className="flex-1 flex flex-col">
-                      <label className="font-bold mb-1">City/District</label>
+                      <label className="font-bold mb-1">{t("CD")}</label>
                       <input
                         type="text"
                         placeholder="e.g. Ankara/Çankaya"
@@ -205,7 +194,7 @@ export default function ContactUs() {
                   </div>
                   <div className="flex flex-col sm:flex-row gap-5">
                     <div className="flex-1 flex flex-col">
-                      <label className="font-bold mb-1">Boat Types</label>
+                      <label className="font-bold mb-1">{t("BT")}</label>
                       <input
                         type="text"
                         placeholder="e.g. Sail"
@@ -213,7 +202,7 @@ export default function ContactUs() {
                       />
                     </div>
                     <div className="flex-1 flex flex-col">
-                      <label className="font-bold mb-1">Approximate Size</label>
+                      <label className="font-bold mb-1">{t("BS")}</label>
                       <input
                         type="text"
                         placeholder="e.g. 15 meters"
@@ -223,7 +212,7 @@ export default function ContactUs() {
                   </div>
                   <div className="flex flex-col sm:flex-row gap-5">
                     <div className="flex-1 flex flex-col">
-                      <label className="font-bold mb-1">Body Material</label>
+                      <label className="font-bold mb-1">{t("BM")}</label>
                       <input
                         type="text"
                         placeholder="e.g. Fiberglass, Wood, Aluminum"
@@ -232,7 +221,7 @@ export default function ContactUs() {
                     </div>
                   </div>
                   <div className="flex-1 flex flex-col">
-                    <label className="font-bold mb-1">Text Message</label>
+                    <label className="font-bold mb-1">{t("TM")}</label>
                     <textarea
                       placeholder="Leave us a message..."
                       className="w-full p-[5px] border border-black rounded-[15px] resize-vertical"

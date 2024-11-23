@@ -98,9 +98,7 @@ export default function Main() {
           <MapComponent />
         </div>
         <div className="flex-1 p-7 mt-10 lg:mt-0 lg:mr-[-10rem]">
-          <h2 className="text-4xl font-black text-gray-900">
-            {t("Map of Vessels Equipped with Marisonia")}
-          </h2>
+          <h2 className="text-4xl font-black text-gray-900">{t("MOVRWM")}</h2>
           <p className="text-lg text-gray-700 mt-4">
             {t(
               "This map displays vessels equipped with the Marisonia device in real-time. You can track vessels located in various regions. Vessels equipped with Marisonia are outfitted with advanced technology sensors, ensuring a safe and efficient sailing experience at sea."

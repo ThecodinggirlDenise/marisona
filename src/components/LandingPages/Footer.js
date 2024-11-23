@@ -1,6 +1,7 @@
 import React from "react";
-
+import { useTranslation } from "react-i18next";
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <div className="flex flex-col items-center mb-5">
       <div className="max-w-6xl w-full">
@@ -8,19 +9,20 @@ const Footer = () => {
         <div className="bg-white p-6 shadow-lg  relative  rounded-xl mx-5 sm:mx-10">
           <div className="flex flex-col md:flex-row justify-between items-center ">
             <h2 className="text-xl font-bold mb-4 md:mb-0 text-center md:text-left">
-              Tekneniz için Özel Fiyat Alın!
+              {" "}
+              {t("BF")}
             </h2>
 
             <div className="flex flex-col sm:flex-row  gap-4">
               <a href="/contact">
                 {" "}
                 <button className="border border-black px-4 py-2 rounded-md text-black font-semibold hover:bg-gray-200 transition duration-300">
-                  Fiyat Teklifi Alın
+                  {t("BPriceF")}
                 </button>
               </a>
               <a href="/our-story">
                 <button className="bg-blue-900 px-4 py-2 rounded-md text-white font-semibold hover:bg-blue-800 transition duration-300">
-                  Hakkımızda Daha Fazlası
+                  {t("MoreAbUs")}
                 </button>
               </a>
             </div>
